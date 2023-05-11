@@ -14,7 +14,11 @@
         value2 = event.target.value;
     })
     $("#btn").on('click', function() {
+                var x = value * value2 / 2
                 console.log(value * value2 / 2)
+                var p = document.createElement('p')
+                p.innerText = x;
+                $(".container").append(p)
     })
     //זה הקוד יש גם בגיטהאב שלחתי לך בווצאפ
 </script>
