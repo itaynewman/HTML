@@ -1,0 +1,30 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            console.log(value + value2)
+            $("#btn").on('click', function() {
+                var v1 = $("#num1").val()
+                var v2 = $("#num2").val()
+                v1 = parseInt(v1)
+                v2 = parseInt(v2)
+                console.log(v1 + v2)
+            })
+            
+        })
+        
+    </script>
+</head>
+<body>
+    calculate the result of adding the numbers in these inputs.
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="btn">Button</button>
+</body>
+</html>
